@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/whois_img/libro.ico" type="image/x-icon">
+    <title>Quiénes Somos - Club Bibliófilos Codo</title>
+    <link rel="stylesheet" href="../css/quienessomos.css">
+</head>
+
+<body>
+    <header>
+            <div class="container-titulo">
+                <h1>Club Bibliófilos Codo</h1><img src="../img/whois_img/libro.png" alt="libro">
+            </div>
+        
+            <nav>
+                <a href="../index.html"><img class="casita" src="../img/whois_img/hogar.png" alt="Inicio"></a>
+                <a href="whois.html">Quiénes Somos</a>
+                <a href="cartelera.html">Cartelera de Novedades</a>
+                <a href="foro.html">Foros</a>
+                <a href="login.html">Login</a>
+            </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <div class="container-s1">
+                <div class="container-h2">
+                    <div>
+                        <h2>¿Quiénes somos?</h2>
+                        <p>Somos un grupo diverso de lectores ávidos, desde aquellos que devoran novelas cada semana hasta los que disfrutan de profundas reflexiones en libros más especializados. Nuestra comunidad abraza la diversidad de géneros literarios, desde la ficción contemporánea hasta la ciencia ficción, la literatura clásica y mucho más.</p>
+                    </div>
+                </div>
+                <div class="container-img1"></div> <!-- img que cambia, ver CSS-->
+            </div>
+        </section>
+
+        <section>
+            <div class="container-s2">
+                <div>
+                    <img src="../img/whois_img/escritor1.png" alt="foto Lazo">
+                    <p><strong>Ian Lazo.</strong> Ian Lazo es periodista, subeditor del suplemento Radar del diario Página/12 y docente. Ha escrito perfiles, como La hermana menor, acerca de la escritora Silvina Ocampo.</p>
+                </div>
+
+                <div>
+                    <img src="../img/whois_img/escritor2.png" alt="foto Longa">
+                    <p><strong>Egly Longa.</strong> Egly es traductora, editora y escritora. Estudió Ciencias Sociales en la Escuela de Estudios Superiores de París. Actualmente es editora de Marea Editora.</p>
+                </div>
+                
+                <div>
+                    <img src="../img/whois_img/escritor3.png" alt="foto Juan">
+                    <p><strong>Juan Martín Mujica Buj.</strong> Juan fue fundador e integrante del Grupo Alejandría que en 2005 inició en Buenos Aires el movimiento de lecturas y ciclos literarios de narrativa.</p>
+                </div>
+                <div>
+                    <img src="../img/whois_img/escritor4.png" alt="foto Lucas ">
+                    <p><strong>Lucas.</strong> es Licenciado en Ciencias Ambientales (USAL), Magíster en Políticas Públicas y Gerenciamiento del Desarrollo (UNSAM-Georgetown).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-s3-s4">
+            <div class="container-s3">
+                <h2>¡Sumate a nosotros!</h2>
+                <p>Completá el formulario y unite a nuestras sesiones literarias. ¡Te esperamos!</p>
+                <form id="formulario-sumate" onsubmit="return validarFormularioSumate()">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ej: María">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ej: Martínez">
+                    </div>
+                    <div>
+                        <label for="nickname">Nickname:</label>
+                        <input type="text" name="nickname" id="nickname">
+                    </div>
+                    <div class="container-mail">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ej: mmartinez123@gmail.com">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="Enviar">
+                        <input type="reset" value="Borrar" class="Borrar">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="container-s4">
+                <h2>Contacto</h2>
+                <form id="formulario-contacto" onsubmit="return validarFormularioContacto()">
+                    <div class="container-mail">
+                        <label for="mail_contacto">Mail:</label>
+                        <input type="email" name="mail_contacto" id="mail_contacto" placeholder="Ej: rcarlos456@gmail.com">
+                    </div>
+                    <div class="container-textarea">
+                        <label for="comentario">Dejanos tu consulta o comentario:</label>
+                        <textarea name="comentario" id="comentario" rows="10" cols="25" placeholder="Quisiera saber..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="Enviar">
+                        <input type="reset" value="Borrar" class="Borrar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+       <!-- Pie de pagina -->
+    <footer>
+        <div>
+            <h4>Club Bibliófilos Codo - Todos los Derechos Reservados Copyright © 2023</h4>
+            <p>Seguinos en nuestras redes</p>
+            <a href="http://www.instagram.com" target="_blank"><img src="../img/whois_img/instagram.png" alt="instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../img/whois_img/twitter.png" alt="twitter"></a>
+            <a href="https://www.reddit.com" target="_blank"><img src="../img/whois_img/reddit.png" alt="reddit"></a>
+        </div>
+    </footer>
+
+    <script src="../js/validacion.js"></script>
+</body>
+</html>
